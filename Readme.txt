@@ -1,0 +1,1 @@
+PhotoMem is licensed under GPL.
