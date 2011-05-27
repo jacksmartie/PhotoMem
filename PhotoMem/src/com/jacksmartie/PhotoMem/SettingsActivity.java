@@ -14,8 +14,8 @@ public class SettingsActivity extends OptionsMenu {
 
 	public static final int PICTURES_OPTION_LENGTH = 15;
 	public static final int SECONDS_OPTION_LENGTH = 4;
-	public static final int DEFAULT_PICTURES_OPTION = 16;
-	public static final int DEFAULT_DELAY_OPTION = 2;
+	public static final int DEFAULT_PICTURES_OPTION = 6;
+	public static final int DEFAULT_DELAY_OPTION = 0;
 	public static final String SETTINGS_NAME = "SettingsFile";
 	public static final String PICTURES_OPTION = "picturesOption";
 	public static final String DELAY_OPTION = "delayOption";
