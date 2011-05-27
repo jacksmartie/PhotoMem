@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fotografisches Gedächtnis</string>
+    <string name="game_name">Fotografisches Gedächtnis - Spielen</string>
+    <string name="scores_name">Fotografisches Gedächtnis - Bestnoten</string>
+    <string name="instructions_name">Fotografisches Gedächtnis - Anleitung</string>
+    <string name="settings_name">Fotografisches Gedächtnis - Einstellungen</string>
+    <string name="name_name">Fotografisches Gedächtnis - Spielernamen</string>
+    <string name="backButton">Vorherig</string>
+    <string name="Ok">Gelten</string>
+    <string name="Cancel">Stornieren</string>
+    <string name="newGameButton">Neues Spiel</string>
+    <string name="continueGameButton">Weiterhin Spiel</string>
+    <string name="settingsButton">Einstellungen</string>
+    <string name="topScoresButton">Bestnoten</string>
+    <string name="instructionsButton">Anleitung</string>
+    <string name="playerNameButton">Spielernamen</string>
+    <string name="scoreLabel">Stand</string>
+    <string name="timerLabel">Timer</string>
+	<string name="instructionsContent">Introduction:\nThis 
+	game uses the pictures stored on your phone. 
+	On the settings screen, you can choose how many pairs 
+	of pictures you would like to play with. For example: 
+	If the settings are for 32 cards, you must have at 
+	least 16 pictures on your phone in order to play.
+	\n\nInstructions:\nSelect a card to flip it around. 
+	Select a second card to flip it around. If the
+	two pictures match, they will disappear. If they do
+	not match, they will both be flipped back after
+	a few seconds delay. On the settings screen, you can
+	choose the length of the delay. Once there are no 
+	more remaining cards, you will have won.</string>
+	<string name="highScoreLabel">#1:</string>
+	<string-array name="numberPictures">
+		<item>4</item>
+		<item>6</item>
+		<item>8</item>
+		<item>10</item>
+		<item>12</item>
+		<item>14</item>
+		<item>16</item>
+		<item>18</item>
+		<item>20</item>
+		<item>22</item>
+		<item>24</item>
+		<item>26</item>
+		<item>28</item>
+		<item>30</item>
+		<item>32</item>
+	</string-array>
+	<string-array name="flipDelay">
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+	</string-array>
+	<string name="missingPicturesPrompt">You do not have enough pictures on your phone to play the game with the current settings.</string>
+</resources>

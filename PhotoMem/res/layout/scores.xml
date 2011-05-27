@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="vertical" android:background="@drawable/menu_background">
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/linearLayout11">
+        <ImageButton android:id="@+id/imageButton1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:onClick="OnButtonScoresBackClickListener" android:src="@drawable/back" android:background="@color/transparent"></ImageButton>
+        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageButton2" android:src="@drawable/name" android:onClick="OnButtonScoresNameClickListener" android:background="@color/transparent"></ImageButton>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout1" android:layout_height="wrap_content">
+        <TextView android:id="@+id/textView2" android:layout_height="wrap_content" android:text="1." android:layout_width="wrap_content" android:paddingRight="5sp" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="0" android:id="@+id/scoresScore1" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:gravity="right" android:layout_width="match_parent" android:id="@+id/scoresName1" android:textColor="@color/white"></TextView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout2" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TextView android:id="@+id/textView5" android:layout_height="wrap_content" android:text="2." android:layout_width="wrap_content" android:paddingRight="5sp" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="0" android:id="@+id/scoresScore2" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:gravity="right" android:layout_width="match_parent" android:id="@+id/scoresName2" android:textColor="@color/white"></TextView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout3" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TextView android:id="@+id/textView8" android:layout_height="wrap_content" android:text="3." android:layout_width="wrap_content" android:paddingRight="5sp" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="0" android:id="@+id/scoresScore3" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:gravity="right" android:layout_width="match_parent" android:id="@+id/scoresName3" android:textColor="@color/white"></TextView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout4" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TextView android:id="@+id/textView11" android:layout_height="wrap_content" android:text="4." android:layout_width="wrap_content" android:paddingRight="5sp" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="0" android:id="@+id/scoresScore4" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:gravity="right" android:layout_width="match_parent" android:id="@+id/scoresName4" android:textColor="@color/white"></TextView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout5" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TextView android:id="@+id/textView14" android:layout_height="wrap_content" android:text="5." android:layout_width="wrap_content" android:paddingRight="5sp" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="0" android:id="@+id/scoresScore5" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:gravity="right" android:layout_width="match_parent" android:id="@+id/scoresName5" android:textColor="@color/white"></TextView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout6" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TextView android:id="@+id/textView17" android:layout_height="wrap_content" android:text="6." android:layout_width="wrap_content" android:paddingRight="5sp" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="0" android:id="@+id/scoresScore6" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:gravity="right" android:layout_width="match_parent" android:id="@+id/scoresName6" android:textColor="@color/white"></TextView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout7" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TextView android:id="@+id/textView20" android:layout_height="wrap_content" android:text="7." android:layout_width="wrap_content" android:paddingRight="5sp" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="0" android:id="@+id/scoresScore7" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:gravity="right" android:layout_width="match_parent" android:id="@+id/scoresName7" android:textColor="@color/white"></TextView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout8" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TextView android:id="@+id/textView23" android:layout_height="wrap_content" android:text="8." android:layout_width="wrap_content" android:paddingRight="5sp" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="0" android:id="@+id/scoresScore8" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:gravity="right" android:layout_width="match_parent" android:id="@+id/scoresName8" android:textColor="@color/white"></TextView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout9" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TextView android:id="@+id/textView26" android:layout_height="wrap_content" android:text="9." android:layout_width="wrap_content" android:paddingRight="5sp" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="0" android:id="@+id/scoresScore9" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:gravity="right" android:layout_width="match_parent" android:id="@+id/scoresName9" android:textColor="@color/white"></TextView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout10" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TextView android:id="@+id/textView29" android:layout_height="wrap_content" android:text="10." android:layout_width="wrap_content" android:paddingRight="5sp" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="0" android:id="@+id/scoresScore10" android:textColor="@color/white"></TextView>
+        <TextView android:layout_height="wrap_content" android:gravity="right" android:layout_width="match_parent" android:id="@+id/scoresName10" android:textColor="@color/white"></TextView>
+    </LinearLayout>
+</LinearLayout>

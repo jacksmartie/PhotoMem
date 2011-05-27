@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical" android:background="@drawable/menu_background">
+	<LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:orientation="vertical" android:layout_height="match_parent">
+		<LinearLayout android:id="@+id/linearLayout2" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_horizontal">
+			<ImageButton android:onClick="OnButtonMenuNewGameClickListener" android:src="@drawable/icon" android:id="@+id/imageButtonNewGame" android:background="@drawable/frame" android:layout_height="wrap_content" android:layout_width="wrap_content"></ImageButton>
+			<ImageButton android:onClick="OnButtonMenuContinueGameClickListener" android:src="@drawable/continue_game" android:id="@+id/imageButtonContinueGame" android:background="@drawable/frame" android:layout_height="wrap_content" android:layout_width="wrap_content"></ImageButton>
+		</LinearLayout>
+		<LinearLayout android:id="@+id/linearLayout3" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_horizontal">
+			<ImageButton android:onClick="OnButtonMenuSettingsClickListener" android:src="@drawable/settings" android:id="@+id/imageButtonSettings" android:background="@drawable/frame" android:layout_height="wrap_content" android:layout_width="wrap_content"></ImageButton>
+			<ImageButton android:onClick="OnButtonMenuTopScoresClickListener" android:src="@drawable/scores" android:id="@+id/imageButtonTopScores" android:background="@drawable/frame" android:layout_height="wrap_content" android:layout_width="wrap_content"></ImageButton>
+		</LinearLayout>
+		<LinearLayout android:id="@+id/linearLayout4" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_horizontal">
+			<ImageButton android:background="@drawable/frame" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imageButtonInstructions" android:onClick="OnButtonMenuInstructionsClickListener" android:src="@drawable/instructions"></ImageButton>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

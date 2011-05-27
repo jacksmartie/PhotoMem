@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/newGameButton" android:id="@+id/optionsMenuNewGame" android:icon="@drawable/icon"></item>
+    <item android:id="@+id/optionsMenuContinueGame" android:title="@string/continueGameButton" android:icon="@drawable/continue_game"></item>
+    <item android:id="@+id/optionsMenuSettings" android:title="@string/settingsButton" android:icon="@drawable/settings"></item>
+    <item android:id="@+id/optionsMenuTopScores" android:title="@string/topScoresButton" android:icon="@drawable/scores"></item>
+    <item android:id="@+id/optionsMenuInstructions" android:title="@string/instructionsButton" android:icon="@drawable/instructions"></item>
+</menu>

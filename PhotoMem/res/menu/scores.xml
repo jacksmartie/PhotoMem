@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="@string/backButton" android:id="@+id/optionsMenuBack" android:icon="@drawable/back"></item>
+	<item android:title="@string/playerNameButton" android:id="@+id/optionsMenuPlayerName" android:icon="@drawable/name"></item>
+</menu>

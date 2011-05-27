@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="vertical" android:background="@drawable/menu_background">
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imageView1" android:src="@drawable/icon"></ImageView>
+    <Spinner android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/spinnerSettingsNumberPictures"></Spinner>
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imageView2" android:src="@drawable/delay"></ImageView>
+    <Spinner android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/spinnerSettingsFlipDelay"></Spinner>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/linearLayout1" android:gravity="center">
+        <ImageButton android:id="@+id/imageButton1" android:layout_height="wrap_content" android:onClick="OnButtonSettingsOkClickListener" android:src="@drawable/check" android:background="@drawable/frame" android:layout_width="wrap_content"></ImageButton>
+        <ImageButton android:id="@+id/imageButton2" android:layout_height="wrap_content" android:onClick="OnButtonSettingsCancelClickListener" android:src="@drawable/cancel" android:background="@drawable/frame" android:layout_width="wrap_content"></ImageButton>
+    </LinearLayout>
+</LinearLayout>

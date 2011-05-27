@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">照片内存</string>
+    <string name="game_name">照片内存 - 游戏</string>
+    <string name="scores_name">照片内存 - 高分</string>
+    <string name="instructions_name">照片内存 - 说明</string>
+    <string name="settings_name">照片内存 - 选项</string>
+    <string name="name_name">照片内存 - 球员的名字</string>
+    <string name="backButton">回去</string>
+    <string name="Ok">确定</string>
+    <string name="Cancel">取消</string>
+    <string name="newGameButton">新游戏</string>
+    <string name="continueGameButton">继续游戏</string>
+    <string name="settingsButton">选项</string>
+    <string name="topScoresButton">高分</string>
+    <string name="instructionsButton">说明</string>
+    <string name="playerNameButton">球员的名字</string>
+    <string name="scoreLabel">总分</string>
+    <string name="timerLabel">计时器</string>
+	<string name="instructionsContent">Introduction:\nThis 
+	game uses the pictures stored on your phone. 
+	On the settings screen, you can choose how many pairs 
+	of pictures you would like to play with. For example: 
+	If the settings are for 32 cards, you must have at 
+	least 16 pictures on your phone in order to play.
+	\n\nInstructions:\nSelect a card to flip it around. 
+	Select a second card to flip it around. If the
+	two pictures match, they will disappear. If they do
+	not match, they will both be flipped back after
+	a few seconds delay. On the settings screen, you can
+	choose the length of the delay. Once there are no 
+	more remaining cards, you will have won.</string>
+	<string name="highScoreLabel">一:</string>
+	<string-array name="numberPictures">
+		<item>四</item>
+		<item>六</item>
+		<item>八</item>
+		<item>十</item>
+		<item>十二</item>
+		<item>十四</item>
+		<item>十六</item>
+		<item>十八</item>
+		<item>二十</item>
+		<item>二十二</item>
+		<item>二十四</item>
+		<item>二六</item>
+		<item>二八</item>
+		<item>三十</item>
+		<item>三十二</item>
+	</string-array>
+	<string-array name="flipDelay">
+		<item>二</item>
+		<item>三</item>
+		<item>四</item>
+		<item>五</item>
+	</string-array>
+	<string name="missingPicturesPrompt">您没有足够的图片在您的手机。更改设置。 </string>
+</resources>

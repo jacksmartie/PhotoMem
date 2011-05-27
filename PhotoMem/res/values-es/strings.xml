@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FotoMem</string>
+    <string name="game_name">FotoMem - Jugando</string>
+    <string name="scores_name">FotoMem - Puntuaciones más Altas</string>
+    <string name="instructions_name">FotoMem - Instrucciones</string>
+    <string name="settings_name">FotoMem - Configuración</string>
+    <string name="name_name">FotoMem - Nombre del Jugador</string>
+    <string name="backButton">Anterior</string>
+    <string name="Ok">Aplicar</string>
+    <string name="Cancel">Cancelar</string>
+    <string name="newGameButton">Nueva Partida</string>
+    <string name="continueGameButton">Continuar Juego</string>
+    <string name="settingsButton">Configuración</string>
+    <string name="topScoresButton">Puntuaciones más Altas</string>
+    <string name="instructionsButton">Instrucciones</string>
+    <string name="playerNameButton">Nombre del Jugador</string>
+    <string name="scoreLabel">Puntuación</string>
+    <string name="timerLabel">Tiempo</string>
+	<string name="instructionsContent">Introducción:\nEste 
+	juego usa las imágenes almacenadas en tu 
+	teléfono. En la pantalla de configuración, puedes 
+	elegir con cuántos pares de fotografías te gustaría 
+	jugar. Por ejemplo: Si la configuración es de 32 
+	cartas, debes tener al menos 16 imágenes en tu 
+	teléfono para poder jugar.\n\nInstrucciones:\nSelecciona 
+	una carta para darla vuelta. Selecciona 
+	una segunda carta para darla vuelta. Si las dos 
+	imágenes coinciden, van a desaparecer. Si no 
+	coinciden, ambas serán dadas vuelta nuevamente 
+	después de unos segundos. En la pantalla de 
+	configuración puedes elegir la duración del retraso. 
+	Una vez que no haya más cartas restantes, habrás 
+	ganado.</string>
+	<string name="highScoreLabel">#1:</string>
+	<string-array name="numberPictures">
+		<item>4</item>
+		<item>6</item>
+		<item>8</item>
+		<item>10</item>
+		<item>12</item>
+		<item>14</item>
+		<item>16</item>
+		<item>18</item>
+		<item>20</item>
+		<item>22</item>
+		<item>24</item>
+		<item>26</item>
+		<item>28</item>
+		<item>30</item>
+		<item>32</item>
+	</string-array>
+	<string-array name="flipDelay">
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+	</string-array>
+	<string name="missingPicturesPrompt">No tienes suficientes fotos en tu teléfono para jugar el juego con la configuración actual.</string>
+</resources>

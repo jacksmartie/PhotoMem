@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/Ok" android:id="@+id/optionsMenuOk" android:icon="@drawable/check"></item>
+    <item android:title="@string/Cancel" android:id="@+id/optionsMenuCancel" android:icon="@drawable/cancel"></item>
+</menu>

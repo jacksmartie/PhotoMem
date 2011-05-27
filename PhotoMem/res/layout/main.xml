@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:id="@+id/linearLayout" android:orientation="vertical">
+	<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/mainTopLinearLayout">
+		<ImageButton android:layout_width="wrap_content" android:id="@+id/imageButton1" android:layout_height="wrap_content" android:onClick="OnButtonMainBackClickListener" android:src="@drawable/back" android:background="@color/transparent"></ImageButton>
+		<LinearLayout android:id="@+id/linearLayout2"
+			android:layout_width="match_parent" android:layout_height="match_parent"
+			android:gravity="center|right">
+			<TextView android:id="@+id/scoreLabel"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:text="@string/scoreLabel" android:paddingRight="5sp" android:textColor="@color/white"></TextView>
+			<TextView android:id="@+id/currentScore"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:text="0" android:textColor="@color/white"></TextView>
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:paddingLeft="5sp"
+				android:paddingRight="5sp" android:id="@+id/highScoreLabel"
+				android:text="@string/highScoreLabel" android:textColor="@color/white"></TextView>
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="0" android:id="@+id/highScore" android:textColor="@color/white"></TextView>
+			<TextView android:id="@+id/timerLabel"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:text="@string/timerLabel" android:paddingLeft="5sp"
+				android:paddingRight="5sp" android:textColor="@color/white"></TextView>
+			<Chronometer android:text="Chronometer" android:id="@+id/chronometer1"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"></Chronometer>
+		</LinearLayout>
+	</LinearLayout>
+	<GridView android:layout_height="match_parent"
+		android:layout_width="wrap_content" android:id="@+id/gridView" android:horizontalSpacing="0dip" android:gravity="center" android:listSelector="@color/transparent"></GridView>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">फ़ोटो मेमोरी</string>
+    <string name="game_name">फ़ोटो मेमोरी – आप खेल रहे हैं</string>
+    <string name="scores_name">फ़ोटो मेमोरी – सबसे उत्तम स्कोर</string>
+    <string name="instructions_name">फ़ोटो मेमोरी – खेलने का तरीका</string>
+    <string name="settings_name">फ़ोटो मेमोरी - सेटिंग्स</string>
+    <string name="name_name">फ़ोटो मेमोरी - खिलाड़ी का नाम</string>
+    <string name="backButton">पिछले कदम पर लौटें</string>
+    <string name="Ok">ठीक है</string>
+    <string name="Cancel">रद्द करें</string>
+    <string name="newGameButton">नया खेल</string>
+    <string name="continueGameButton">खेल जारी रखें</string>
+    <string name="settingsButton">सेटिंग्स</string>
+    <string name="topScoresButton">सबसे उत्तम स्कोर</string>
+    <string name="instructionsButton">खेलने का तरीका</string>
+    <string name="playerNameButton">खिलाड़ी का नाम</string>
+    <string name="scoreLabel">स्कोर</string>
+    <string name="timerLabel">घड़ी</string>
+	<string name="instructionsContent">
+	परिचय\nयह खेल आपके मोबाइल पर उपस्थित तस्वीरों का उपयोग करता है। सेटिंग स्क्रीन पर आप चुनिए
+	 की आपको कितने तस्वीर जोड़ों के साथ खेलना है। उदाहरण के लिए यदी सेटिंग पर आप 16 जोड़ी चुनते 
+	 हैं तो खेलने के लिए आपके पास कमस कम 16 तस्वीरे होने चाहिए।\n\nखेलने का तरीका\nहाथी 
+	 को चुनकर तस्वीर पल्टिए। अब दूसरे को चुनकर उसे भी पल्टिए। यदी दोनो एक ही हो तो वे दोनो लुप्त हो 
+	 जाएंगे और यदी न हो तो कुछ क्षण मे फिर से उलटे हो जाएंगे। कितने देर के बाद, ये आप सेटिंग पर 
+	 चुन सकते हैं। जब आप सारे जोड़ों को ठीक से चुन लेंगे तो आप जीत जाओगे और खेल खतम हो जाएगा।
+	</string>
+	<string name="highScoreLabel">१:</string>
+	<string-array name="numberPictures">
+		<item>चार</item>
+		<item>छह</item>
+		<item>आठ</item>
+		<item>दस</item>
+		<item>बारह</item>
+		<item>चौदह</item>
+		<item>सोलह</item>
+		<item>अठारह</item>
+		<item>बीस</item>
+		<item>बाईस</item>
+		<item>चौबीस</item>
+		<item>छब्बीस</item>
+		<item>अट्ठाईस</item>
+		<item>तीस</item>
+		<item>बत्तीस</item>
+	</string-array>
+	<string-array name="flipDelay">
+		<item>दो</item>
+		<item>तीन</item>
+		<item>चार</item>
+		<item>पांच</item>
+	</string-array>
+	<string name="missingPicturesPrompt">चुने हुए सेटिंग पर खेलने के लिए क्या आपके मोबाईल में पर्याप्त चित्र हैं?</string>
+</resources>
