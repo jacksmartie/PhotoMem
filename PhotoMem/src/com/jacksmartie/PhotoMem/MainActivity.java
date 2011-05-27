@@ -2,6 +2,7 @@ package com.jacksmartie.PhotoMem;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Random;
 import java.util.HashSet;
@@ -19,7 +20,6 @@ import android.os.SystemClock;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.Display;
-import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -64,6 +64,8 @@ public class MainActivity extends OptionsMenu {
 	public static final String FLIPPED_FACE_DOWN_FIRING = "FlippedFaceDownFiring";
 	public static final String CONFIGURATION_CHANGED = "ConfigurationChanged";
 	public static final int MAX_COLOR_VALUE_PLUS_ONE = 256;
+	public static HashMap<Integer, Integer> spinnerPicturesMap;
+	public static HashMap<Integer, Integer> spinnerSecondsMap;
 	SharedPreferences settings;
 	SharedPreferences.Editor editor;
 	
@@ -237,24 +239,7 @@ public class MainActivity extends OptionsMenu {
         							
         							Handler handler = new Handler();
         							
-        							switch (settings.getInt(SettingsActivity.DELAY_OPTION, SettingsActivity.DELAY_2)) {
-        								case SettingsActivity.DELAY_2:
-        									handler.postDelayed(flipFaceDown, SettingsActivity.DELAY_OPTION_0*1000);
-        									break;
-        								case SettingsActivity.DELAY_3:
-        									handler.postDelayed(flipFaceDown, SettingsActivity.DELAY_OPTION_1*1000);
-        									break;
-        								case SettingsActivity.DELAY_4:
-        									handler.postDelayed(flipFaceDown, SettingsActivity.DELAY_OPTION_2*1000);
-        									break;
-        								case SettingsActivity.DELAY_5:
-        									handler.postDelayed(flipFaceDown, SettingsActivity.DELAY_OPTION_3*1000);
-        									break;
-        								default:
-        									break;
-        							}
-        							
-        							
+        							handler.postDelayed(flipFaceDown, spinnerSecondsMap.get(settings.getInt(SettingsActivity.DELAY_OPTION, SettingsActivity.DEFAULT_DELAY_OPTION))*1000);
         						}
         					}
         				}
@@ -327,6 +312,13 @@ public class MainActivity extends OptionsMenu {
     }
     
     public void initializeVariables() {
+    	for (int i = 0; i < SettingsActivity.PICTURES_OPTION_LENGTH; i++) {
+    		spinnerPicturesMap.put(i, (i*2)+4);
+    	}
+    	for (int i = 0; i < SettingsActivity.SECONDS_OPTION_LENGTH; i++) {
+    		spinnerSecondsMap.put(i, i+2);
+    	}
+    	
     	secondsPassed = 0;
     	
     	topScoresOption.add(0, ScoresActivity.TOP_SCORE_1);
@@ -389,55 +381,7 @@ public class MainActivity extends OptionsMenu {
     	textView = (TextView) findViewById(R.id.highScore);
     	textView.setText(String.valueOf(settings.getInt(ScoresActivity.TOP_SCORE_1, 0)));
         
-        switch (settings.getInt(SettingsActivity.PICTURES_OPTION, SettingsActivity.DEFAULT_PICTURES_OPTION)) {
-        	case SettingsActivity.PICTURES_4:
-        		totalImages = SettingsActivity.PICTURES_OPTION_0;
-	        	break;
-        	case SettingsActivity.PICTURES_6:
-        		totalImages = SettingsActivity.PICTURES_OPTION_1;
-	        	break;
-        	case SettingsActivity.PICTURES_8:
-        		totalImages = SettingsActivity.PICTURES_OPTION_2;
-	        	break;
-        	case SettingsActivity.PICTURES_10:
-        		totalImages = SettingsActivity.PICTURES_OPTION_3;
-	        	break;
-        	case SettingsActivity.PICTURES_12:
-        		totalImages = SettingsActivity.PICTURES_OPTION_4;
-	        	break;
-        	case SettingsActivity.PICTURES_14:
-        		totalImages = SettingsActivity.PICTURES_OPTION_5;
-	        	break;
-        	case SettingsActivity.PICTURES_16:
-        		totalImages = SettingsActivity.PICTURES_OPTION_6;
-	        	break;
-        	case SettingsActivity.PICTURES_18:
-        		totalImages = SettingsActivity.PICTURES_OPTION_7;
-	        	break;
-        	case SettingsActivity.PICTURES_20:
-        		totalImages = SettingsActivity.PICTURES_OPTION_8;
-	        	break;
-        	case SettingsActivity.PICTURES_22:
-        		totalImages = SettingsActivity.PICTURES_OPTION_9;
-	        	break;
-        	case SettingsActivity.PICTURES_24:
-        		totalImages = SettingsActivity.PICTURES_OPTION_10;
-	        	break;
-        	case SettingsActivity.PICTURES_26:
-        		totalImages = SettingsActivity.PICTURES_OPTION_11;
-	        	break;
-        	case SettingsActivity.PICTURES_28:
-        		totalImages = SettingsActivity.PICTURES_OPTION_12;
-	        	break;
-        	case SettingsActivity.PICTURES_30:
-        		totalImages = SettingsActivity.PICTURES_OPTION_13;
-	        	break;
-        	case SettingsActivity.PICTURES_32:
-        		totalImages = SettingsActivity.PICTURES_OPTION_14;
-	        	break;
-	        default:
-	        	break;
-        }
+    	totalImages = spinnerPicturesMap.get(settings.getInt(SettingsActivity.PICTURES_OPTION, SettingsActivity.DEFAULT_PICTURES_OPTION));
         
         imageStringArrayList = new ArrayList<String>(totalImages);
         imageStringArrayList2 = new ArrayList<String>(totalImages);
